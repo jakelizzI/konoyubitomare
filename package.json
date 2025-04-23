@@ -1,0 +1,15 @@
+{
+  "name": "konoyubitomare",
+  "module": "index.ts",
+  "workspaces": [
+    "packages/frontend",
+    "packages/backend",
+    "packages/shared"
+  ],
+  "scripts": {
+    "dev:backend": "bun run --filter backend dev",
+    "build:backend": "bun run --filter backend build",
+    "test:backend": "bun run --filter backend test",
+    "test:backend:watch": "bun run --filter backend test:watch"
+  }
+}
